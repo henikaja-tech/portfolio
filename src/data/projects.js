@@ -1,0 +1,55 @@
+// Données des projets : contenu identique à la version HTML d'origine.
+// Les captures d'écran ont été extraites des data-URI base64 du fichier source
+// et déposées dans /public/images pour rester des fichiers statiques légers.
+export const projects = [
+  {
+    slug: 'infrastructure-serveur-l2eni',
+    title: "Infrastructure serveur L2ENI",
+    tags: ["Linux", "Apache2", "LDAP", "DNS", "Mail"],
+    description: "Mise en place complète d'une infrastructure serveur : Apache2, LDAP, DNS, service mail et application web sécurisée en HTTPS.",
+    repo: 'https://github.com/henikaja-tech/infra-serveur-l2eni',
+    addr: "github.com/henikaja-tech/infra-serveur-l2eni",
+    shotCount: 10,
+    images: ['/images/proj-infrastructure-serveur-l2eni-0.png', '/images/proj-infrastructure-serveur-l2eni-1.png', '/images/proj-infrastructure-serveur-l2eni-2.png', '/images/proj-infrastructure-serveur-l2eni-3.png', '/images/proj-infrastructure-serveur-l2eni-4.png', '/images/proj-infrastructure-serveur-l2eni-5.png', '/images/proj-infrastructure-serveur-l2eni-6.png', '/images/proj-infrastructure-serveur-l2eni-7.png', '/images/proj-infrastructure-serveur-l2eni-8.png', '/images/proj-infrastructure-serveur-l2eni-9.png'],
+  },
+  {
+    slug: 'routage-ip-rip-amp-ospf',
+    title: "Routage IP — RIP & OSPF",
+    tags: ["Cisco", "RIP v2", "OSPF", "GNS3"],
+    description: "Étude et redistribution des protocoles de routage RIP v2 et OSPF, simulée sur GNS3 avec des routeurs Cisco 7200. Analyse Wireshark.",
+    repo: 'https://github.com/henikaja-tech/routage-ip-rip-ospf',
+    addr: "GNS3 · ProjetRoutageIP.gns3",
+    shotCount: 6,
+    images: ['/images/proj-routage-ip-rip-amp-ospf-0.png', '/images/proj-routage-ip-rip-amp-ospf-1.png', '/images/proj-routage-ip-rip-amp-ospf-2.png', '/images/proj-routage-ip-rip-amp-ospf-3.png', '/images/proj-routage-ip-rip-amp-ospf-4.png', '/images/proj-routage-ip-rip-amp-ospf-5.png'],
+  },
+  {
+    slug: 'gestion-de-pi-ces-automobiles',
+    title: "Gestion de pièces automobiles",
+    tags: ["C#", "WinForms", "MySQL"],
+    description: "Application de bureau WinForms (architecture MVC) pour la gestion de stock, clients, fournisseurs, ventes et factures PDF.",
+    repo: 'https://github.com/henikaja-tech/gestion-pieces-auto',
+    addr: "github.com/henikaja-tech/gestion-pieces-auto",
+    shotCount: 10,
+    images: ['/images/proj-gestion-de-pi-ces-automobiles-0.png', '/images/proj-gestion-de-pi-ces-automobiles-1.png', '/images/proj-gestion-de-pi-ces-automobiles-2.png', '/images/proj-gestion-de-pi-ces-automobiles-3.png', '/images/proj-gestion-de-pi-ces-automobiles-4.png', '/images/proj-gestion-de-pi-ces-automobiles-5.png', '/images/proj-gestion-de-pi-ces-automobiles-6.png', '/images/proj-gestion-de-pi-ces-automobiles-7.png', '/images/proj-gestion-de-pi-ces-automobiles-8.png', '/images/proj-gestion-de-pi-ces-automobiles-9.png'],
+  },
+  {
+    slug: 'gestion-de-location-de-voitures',
+    title: "Gestion de location de voitures",
+    tags: ["Vue.js", "PHP", "SPA"],
+    description: "SPA en Vue.js avec un backend PHP (API REST) : ajout, listage, modification, suppression, bilan et statistiques de location.",
+    repo: 'https://github.com/henikaja-tech/projet-location',
+    addr: "github.com/henikaja-tech/projet-location",
+    shotCount: 5,
+    images: ['/images/proj-gestion-de-location-de-voitures-0.png', '/images/proj-gestion-de-location-de-voitures-1.png', '/images/proj-gestion-de-location-de-voitures-2.png', '/images/proj-gestion-de-location-de-voitures-3.png', '/images/proj-gestion-de-location-de-voitures-4.png'],
+  },
+  {
+    slug: 'coop-rative-de-transport',
+    title: "Coopérative de transport",
+    tags: ["Laravel", "PHP", "MySQL"],
+    description: "Application web Laravel : réservation de places, suivi des paiements, recherche client et reçus PDF pour une coopérative de transport.",
+    repo: 'https://github.com/henikaja-tech/cooperative',
+    addr: "github.com/henikaja-tech/cooperative",
+    shotCount: 8,
+    images: ['/images/proj-coop-rative-de-transport-0.png', '/images/proj-coop-rative-de-transport-1.png', '/images/proj-coop-rative-de-transport-2.png', '/images/proj-coop-rative-de-transport-3.png', '/images/proj-coop-rative-de-transport-4.png', '/images/proj-coop-rative-de-transport-5.png', '/images/proj-coop-rative-de-transport-6.png', '/images/proj-coop-rative-de-transport-7.png'],
+  },
+];

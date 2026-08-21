@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #f0f3f9;
+  --border: #e4e9f2;
+  --text: #1a2233;
+  --text-mut: #64748b;
+  --text-faint: #9aa7bd;
+  --primary: #4453f0;
+  --primary-d: #333fce;
+  --cyan: #0aa8c2;
+  --orange: #f0862e;
+  --green: #22b8a0;
+  --red: #ef4444;
+  --gold: #a08c34;
+}
+
+html.dark {
+  --bg: #0d1220;
+  --surface: #151b2c;
+  --surface-2: #1b2338;
+  --border: #262f47;
+  --text: #eef2fa;
+  --text-mut: #9aa7c2;
+  --text-faint: #5f6c8a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  /* Le bandeau de compétences reste animé même si l'utilisateur a activé
+     "réduire les animations" au niveau du système d'exploitation. */
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation-duration: 28s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ---------- Bandeau de compétences défilant (masque de fondu sur les bords) ---------- */
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+/* ---------- Curseur clignotant du typewriter (miroir du cursorChar '|' de Typed.js) ---------- */
+.typed-cursor {
+  display: inline-block;
+  width: 2px;
+  margin-left: 2px;
+  background: var(--primary);
+  animation: caret 0.9s step-end infinite;
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ---------- Effet "shine" au survol des boutons primaires ---------- */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-20deg);
+}
+.btn-shine:hover::after {
+  animation: shine 0.9s ease;
+}
+@keyframes shine {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 140%;
+  }
+}
+
+/* ---------- Scrollbar masquée pour le carrousel de projets ---------- */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
