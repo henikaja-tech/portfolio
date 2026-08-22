@@ -85,7 +85,8 @@ export default function Hero() {
         </motion.a>
 
         <motion.a
-          href="#contact"
+          href="/cv.pdf"
+          download="CV-Henikaja-Andrianirina.pdf"
           whileHover={{ y: -3, scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           className="group relative inline-flex h-[54px] w-[190px] items-center justify-center overflow-hidden rounded-full border border-border bg-gradient-to-b from-surface-2 to-border text-[15px] font-extrabold text-text shadow-[inset_0_2px_4px_rgba(0,0,0,.08),0_10px_22px_-8px_rgba(30,41,86,.3)]"
