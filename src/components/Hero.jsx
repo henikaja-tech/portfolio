@@ -48,7 +48,7 @@ export default function Hero() {
         Disponible pour un stage — Administrateur Réseau &amp; Systèmes
       </div>
 
-      <h1 className="mb-1.5 break-words font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-primary">
+      <h1 className="mb-1.5 break-words font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] text-primary">
         Henikaja David
         <br />
         <span style={{ color: accentColor, transition: 'color .6s ease' }}>ANDRIANIRINA</span>
