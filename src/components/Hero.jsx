@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Eye } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { useAccentCycle } from '../hooks/useAccentCycle';
 
@@ -48,7 +48,7 @@ export default function Hero() {
         Disponible pour un stage — Administrateur Réseau &amp; Systèmes
       </div>
 
-      <h1 className="mb-1.5 font-display text-[clamp(2.7rem,6.8vh,5.2rem)] font-extrabold leading-[1.1] text-primary">
+      <h1 className="mb-1.5 break-words font-display text-[clamp(2rem,9vw,5.2rem)] font-extrabold leading-[1.1] text-primary">
         Henikaja David
         <br />
         <span style={{ color: accentColor, transition: 'color .6s ease' }}>ANDRIANIRINA</span>
@@ -85,15 +85,13 @@ export default function Hero() {
         </motion.a>
 
         <motion.a
-          href="/cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#contact"
           whileHover={{ y: -3, scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           className="group relative inline-flex h-[54px] w-[190px] items-center justify-center overflow-hidden rounded-full border border-border bg-gradient-to-b from-surface-2 to-border text-[15px] font-extrabold text-text shadow-[inset_0_2px_4px_rgba(0,0,0,.08),0_10px_22px_-8px_rgba(30,41,86,.3)]"
         >
           <span className="absolute left-1.5 top-1.5 flex h-[42px] w-[42px] items-center justify-center rounded-full bg-gradient-to-br from-surface to-surface-2 shadow-md transition-transform duration-300 group-hover:translate-x-[126px]">
-            <Eye size={16} strokeWidth={2.5} className="text-primary" />
+            <Download size={16} strokeWidth={2.5} className="text-primary" />
           </span>
           <span className="relative z-[1] ml-5">Mon CV</span>
         </motion.a>

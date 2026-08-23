@@ -147,11 +147,11 @@ export const domainCards = [
       dark: { bg: '#241234', border: '#452462', text: '#c4b5fd' },
     },
     tags: [
-        { label: 'MySQL', icon: si('mysql', '6b21a8') },
-  	{ label: 'PostgreSQL', icon: si('postgresql', '6b21a8') },
-  	{ label: 'MariaDB', icon: si('mariadb', '6b21a8') },
-  	{ label: 'Modélisation relationnelle' },
-],  },
+      { label: 'MySQL', icon: si('mysql', '6b21a8') },
+      { label: 'MariaDB', icon: si('mariadb', '6b21a8') },
+      { label: 'Modélisation relationnelle' },
+    ],
+  },
   {
     key: 'diag',
     title: 'Analyse & Diagnostic',
