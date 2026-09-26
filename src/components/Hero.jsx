@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { useAccentCycle } from '../hooks/useAccentCycle';
 
@@ -85,13 +85,15 @@ export default function Hero() {
         </motion.a>
 
         <motion.a
-          href="#contact"
+          href="/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ y: -3, scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           className="group relative inline-flex h-[54px] w-[190px] items-center justify-center overflow-hidden rounded-full border border-border bg-gradient-to-b from-surface-2 to-border text-[15px] font-extrabold text-text shadow-[inset_0_2px_4px_rgba(0,0,0,.08),0_10px_22px_-8px_rgba(30,41,86,.3)]"
         >
           <span className="absolute left-1.5 top-1.5 flex h-[42px] w-[42px] items-center justify-center rounded-full bg-gradient-to-br from-surface to-surface-2 shadow-md transition-transform duration-300 group-hover:translate-x-[126px]">
-            <Download size={16} strokeWidth={2.5} className="text-primary" />
+          <Eye size={16} strokeWidth={2.5} className="text-primary" />
           </span>
           <span className="relative z-[1] ml-5">Mon CV</span>
         </motion.a>
