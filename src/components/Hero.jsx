@@ -70,7 +70,7 @@ export default function Hero() {
         . Je conçois des systèmes qui tiennent debout, du câblage jusqu'à l'interface utilisateur.
         {' '}
         <span className="font-semibold text-text">
-          Disponible pour un stage de 3 mois à partir du 15 septembre 2026.
+          Disponible depuis le 15 septembre 2026 pour un stage de 3 mois.
         </span>
       </p>
 
